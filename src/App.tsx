@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { Canvas } from "react-three-fiber"
+import { Canvas } from "@react-three/fiber"
 import { Circle } from "./components/Circle"
 import { Background } from "./components/Background"
 import { ZERO3 } from "./constants"

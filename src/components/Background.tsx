@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { MeshProps } from "react-three-fiber";
+import { MeshProps } from "@react-three/fiber";
 
 export const Background: FC<MeshProps> = (props) => {
     return (

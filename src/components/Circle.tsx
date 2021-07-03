@@ -1,7 +1,8 @@
 import React from 'react'
-import { MeshProps } from "react-three-fiber";
+import { MeshProps } from "@react-three/fiber";
+import { Mesh } from "three"
 
-const Circle_: React.ForwardRefRenderFunction<MeshProps, MeshProps> = (props, ref) => {
+const Circle_: React.ForwardRefRenderFunction<Mesh, MeshProps> = (props, ref) => {
     return (
         <mesh {...props} ref={ref}>
             <circleGeometry args={[1, 40]}/>
