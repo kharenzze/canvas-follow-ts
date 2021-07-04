@@ -7,13 +7,15 @@ import { ZERO3 } from "../constants"
 
 type CircleRef = React.MutableRefObject<Mesh|null>
 
+const MAX_SPEED = 1
+
 const useInit = (circle: CircleRef) => {
   useEffect(() => {
-    console.log(circle.current)
-    /*
-    circle.current.speed = ZERO3
-    circle.current.acceleration = ZERO3
-     */
+    const c = circle.current
+    if (c) {
+      c.userData.speed = ZERO3
+      c.userData.acceleration = ZERO3
+    }
   }, [circle])
 }
 
