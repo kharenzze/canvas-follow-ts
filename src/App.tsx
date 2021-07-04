@@ -17,7 +17,7 @@ function App() {
         <pointLight position={[10, 10, 10]}/>
         <Background onClick={onClick}/>
         <CirclePlayer position={ZERO3}
-                      target={ZERO3}
+                      target={target}
                       scale={0.2}
         />
       </Canvas>
